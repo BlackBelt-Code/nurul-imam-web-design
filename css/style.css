@@ -1,15 +1,18 @@
 :root {
-    --colorPrimary: #294A66;
-    --colorSecondary: #F9A826;
-    --colorAccent: #E9E9E9;
+    --colorPrimary: #3F3D56;
+    --colorSecondary: #70ACB1;
+    --colorAccent: #ffffff;
 }
+
+
+/* Add Your CSS Styling Here */
 
 body {
     background-color: var(--colorAccent);
 }
 
 .test {
-    background-color: #294A66;
+    background-color: var(--colorPrimary)
 }
 
 .login-bottom-image {
@@ -58,7 +61,7 @@ body {
     border: none;
     border-radius: 100px;
     font-size: 10pt;
-    background-color: #294A66;
+    background-color: var(--colorSecondary);
     color: white;
     padding: 10px;
     box-shadow: 0px 5px 8px rgb(181, 181, 181);
@@ -70,12 +73,6 @@ body {
     background-color: var(--colorSecondary);
 }
 
-
-/* dashboard */
-
-
-/* navbar */
-
 .nav {
     padding: 10px;
     height: 150px;
@@ -86,6 +83,10 @@ body {
     border-bottom-right-radius: 20px;
     border-spacing: 0;
     box-shadow: 0px 0px 5px grey;
+}
+
+#bg {
+    width: 300px;
 }
 
 #admin-img {
@@ -126,19 +127,536 @@ body {
 }
 
 #title {
-    font-size: 12pt;
+    font-size: 20pt;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .card {
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px 0px 5px rgb(206, 206, 206);
     transition: .1s;
+    height: 200px;
+    border: none;
+}
+
+.card img {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.card p {
+    text-align: center;
+    margin-top: 30px;
 }
 
 .card:hover {
     cursor: pointer;
     transform: scale(1.2, 1.2);
     transition: .5s;
+    transition: .5s;
+    color: var(--colorSecondary);
+}
+
+.dasboard .col footer p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10pt;
+}
+
+
+/* Smartphones (portrait) ---------------- */
+
+@media only screen and (max-width: 320px) {
+    /* Add Your CSS Styling Here */
+    /* dashboard */
+    /* navbar */
+    .nav {
+        padding: 10px;
+        height: 150px;
+        background-color: var(--colorPrimary);
+        width: 100%;
+        display: inline-block;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-spacing: 0;
+        box-shadow: 0px 0px 5px grey;
+    }
+    #bg {
+        width: 10px;
+    }
+    #admin-img {
+        margin-left: 30px;
+    }
+    #admin-name,
+    #admin-job {
+        margin-left: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        width: fit-content;
+    }
+    #admin-name {
+        margin-top: 30px;
+    }
+    #admin-job span {
+        font-weight: bold;
+        color: var(--colorSecondary);
+    }
+    #user-icon i {
+        float: right;
+        color: white;
+        margin-right: 50px;
+    }
+    #user-icon i:hover {
+        cursor: pointer;
+        color: var(--colorSecondary);
+        transition: .5s;
+    }
+    .dashboard {
+        transform: translateY(20%);
+    }
+    #title {
+        font-size: 10pt;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .card {
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgb(206, 206, 206);
+        transition: .1s;
+        height: 50px;
+        border: none;
+    }
+    .card img {
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    .card p {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.2, 1.2);
+        transition: .5s;
+        transition: .5s;
+        color: var(--colorSecondary);
+    }
+}
+
+
+/* Smartphones (landscape) ---------------- */
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+    /* Add Your CSS Styling Here */
+    /* dashboard */
+    /* navbar */
+    .nav {
+        padding: 10px;
+        height: 150px;
+        background-color: var(--colorPrimary);
+        width: 100%;
+        display: inline-block;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-spacing: 0;
+        box-shadow: 0px 0px 5px grey;
+    }
+    #bg {
+        margin-top: 50px;
+    }
+    #admin-img {
+        margin-left: 30px;
+    }
+    #admin-name,
+    #admin-job {
+        margin-left: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        width: fit-content;
+    }
+    #admin-name {
+        margin-top: 30px;
+    }
+    #admin-job span {
+        font-weight: bold;
+        color: var(--colorSecondary);
+    }
+    #user-icon i {
+        float: right;
+        color: white;
+        margin-right: 50px;
+    }
+    #user-icon i:hover {
+        cursor: pointer;
+        color: var(--colorSecondary);
+        transition: .5s;
+    }
+    .dashboard {
+        transform: translateY(20%);
+    }
+    #title {
+        font-size: 20pt;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .card {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgb(206, 206, 206);
+        transition: .1s;
+        height: 200px;
+        border: none;
+    }
+    .card img {
+        margin-top: 20px;
+        margin-left: 10px;
+        text-align: center;
+        display: inline-block;
+    }
+    .card p {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.2, 1.2);
+        transition: .5s;
+        transition: .5s;
+        color: var(--colorSecondary);
+    }
+}
+
+
+/* Tablets (portrait) -------------------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Add Your CSS Styling Here */
+    /* dashboard */
+    /* navbar */
+    .nav {
+        padding: 10px;
+        height: 150px;
+        background-color: var(--colorPrimary);
+        width: 100%;
+        display: inline-block;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-spacing: 0;
+        box-shadow: 0px 0px 5px grey;
+    }
+    #bg {
+        width: 300px;
+    }
+    #admin-img {
+        margin-left: 50px;
+    }
+    #admin-name,
+    #admin-job {
+        margin-left: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        width: fit-content;
+    }
+    #admin-name {
+        margin-top: 30px;
+    }
+    #admin-job span {
+        font-weight: bold;
+        color: var(--colorSecondary);
+    }
+    #user-icon i {
+        float: right;
+        color: white;
+        margin-right: 50px;
+    }
+    #user-icon i:hover {
+        cursor: pointer;
+        color: var(--colorSecondary);
+        transition: .5s;
+    }
+    .dashboard {
+        transform: translateY(20%);
+    }
+    #title {
+        font-size: 20pt;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .card {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgb(206, 206, 206);
+        transition: .1s;
+        height: 200px;
+        border: none;
+    }
+    .card img {
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    .card p {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.2, 1.2);
+        transition: .5s;
+        transition: .5s;
+        color: var(--colorSecondary);
+    }
+}
+
+
+/* Tablets (landscape) ------------------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Add Your CSS Styling Here */
+    /* dashboard */
+    /* navbar */
+    .nav {
+        padding: 10px;
+        height: 150px;
+        background-color: var(--colorPrimary);
+        width: 100%;
+        display: inline-block;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-spacing: 0;
+        box-shadow: 0px 0px 5px grey;
+    }
+    #bg {
+        width: 300px;
+    }
+    #admin-img {
+        margin-left: 50px;
+    }
+    #admin-name,
+    #admin-job {
+        margin-left: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        width: fit-content;
+    }
+    #admin-name {
+        margin-top: 30px;
+    }
+    #admin-job span {
+        font-weight: bold;
+        color: var(--colorSecondary);
+    }
+    #user-icon i {
+        float: right;
+        color: white;
+        margin-right: 50px;
+    }
+    #user-icon i:hover {
+        cursor: pointer;
+        color: var(--colorSecondary);
+        transition: .5s;
+    }
+    .dashboard {
+        transform: translateY(20%);
+    }
+    #title {
+        font-size: 20pt;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .card {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgb(206, 206, 206);
+        transition: .1s;
+        height: 200px;
+        border: none;
+    }
+    .card img {
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    .card p {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.2, 1.2);
+        transition: .5s;
+        transition: .5s;
+        color: var(--colorSecondary);
+    }
+}
+
+
+/* Old Desktops and laptops ------------------ */
+
+@media only screen and (min-width: 1025px) {
+    /* dashboard */
+    /* navbar */
+    .nav {
+        padding: 10px;
+        height: 150px;
+        background-color: var(--colorPrimary);
+        width: 100%;
+        display: inline-block;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-spacing: 0;
+        box-shadow: 0px 0px 5px grey;
+    }
+    #bg {
+        width: 300px;
+    }
+    #admin-img {
+        margin-left: 50px;
+    }
+    #admin-name,
+    #admin-job {
+        margin-left: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        width: fit-content;
+    }
+    #admin-name {
+        margin-top: 30px;
+    }
+    #admin-job span {
+        font-weight: bold;
+        color: var(--colorSecondary);
+    }
+    #user-icon i {
+        float: right;
+        color: white;
+        margin-right: 50px;
+    }
+    #user-icon i:hover {
+        cursor: pointer;
+        color: var(--colorSecondary);
+        transition: .5s;
+    }
+    .dashboard {
+        transform: translateY(20%);
+    }
+    #title {
+        font-size: 20pt;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .card {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgb(206, 206, 206);
+        transition: .1s;
+        height: 200px;
+        border: none;
+    }
+    .card img {
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    .card p {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.2, 1.2);
+        transition: .5s;
+        transition: .5s;
+        color: var(--colorSecondary);
+    }
+}
+
+
+/* Desktops ------------------ */
+
+@media only screen and (min-width: 1201px) {
+    /* Add Your CSS Styling Here */
+    /* dashboard */
+    /* navbar */
+    .nav {
+        padding: 10px;
+        height: 150px;
+        background-color: var(--colorPrimary);
+        width: 100%;
+        display: inline-block;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-spacing: 0;
+        box-shadow: 0px 0px 5px grey;
+    }
+    #bg {
+        width: 400px;
+    }
+    #admin-img {
+        margin-left: 50px;
+    }
+    #admin-name,
+    #admin-job {
+        margin-left: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        width: fit-content;
+    }
+    #admin-name {
+        margin-top: 30px;
+    }
+    #admin-job span {
+        font-weight: bold;
+        color: var(--colorSecondary);
+    }
+    #user-icon i {
+        float: right;
+        color: white;
+        margin-right: 50px;
+    }
+    #user-icon i:hover {
+        cursor: pointer;
+        color: var(--colorSecondary);
+        transition: .5s;
+    }
+    .dashboard {
+        transform: translateY(20%);
+    }
+    #title {
+        font-size: 20pt;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .card {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgb(206, 206, 206);
+        transition: .1s;
+        height: 200px;
+        border: none;
+    }
+    .card img {
+        margin-top: 30px;
+        margin-left: 30px;
+        text-align: center;
+        display: inline-block;
+    }
+    .card p {
+        text-align: center;
+    }
+    .card:hover {
+        cursor: pointer;
+        transform: scale(1.2, 1.2);
+        transition: .5s;
+        transition: .5s;
+        color: var(--colorSecondary);
+    }
 }
